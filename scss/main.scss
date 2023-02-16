@@ -1,0 +1,24 @@
+/* Start Requirement for main.css */
+
+@import url(./setting/setting.css);
+@import url(./xxl/xxl.css) screen and (min-width:1400px);
+@import url(./xl/xl.css) screen and (min-width:1200px) and (max-width:1400px);
+@import url(./lg/lg.css) screen and (min-width:992px) and (max-width:1200px);
+@import url(./md/md.css) screen and (min-width:768px) and (max-width:992px);
+@import url(./sm/sm.css) screen and (min-width:576px) and (max-width:768px);
+@import url(./xs/xs.css) screen and (max-width:576px);
+
+/* End Requirement for main.css */
+
+/* Start Requirement for SASS Grid System */
+
+@import "gridSystem";
+
+@include gridSystem(1400px);
+@include gridSystem(1200px);
+@include gridSystem(992px);
+@include gridSystem(768px);
+@include gridSystem(576px);
+@include gridSystem(100px);
+
+/* End Requirement for SASS Grid System */

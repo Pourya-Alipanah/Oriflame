@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: sans-regular;
+    src: url(../../font/sans-regular.eot);
+    src: url(../../font/sans-regular.otf);
+    src: url(../../font/sans-regular.ttf);
+    src: url(../../font/sans-regular.woff);
+    src: url(../../font/sans-regular.woff2);
+}
+body{
+    font-family: sans-regular;
+}

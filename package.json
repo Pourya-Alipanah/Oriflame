@@ -1,0 +1,24 @@
+{
+  "name": "oriflame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -w scss/main.scss -o css/ -r",
+    "scssMin": "node-sass -w scss/main.scss -o css/ -r --output-style compressed",
+    "scssSetting": "node-sass -w scss/setting/setting.scss -o css/setting/ -r --output-style compressed",
+    "xxl": "node-sass -w scss/xxl -o css/xxl/ -r --output-style compressed",
+    "xl": "node-sass -w scss/xl -o css/xl/ -r --output-style compressed",
+    "lg": "node-sass -w scss/lg -o css/lg/ -r --output-style compressed",
+    "md": "node-sass -w scss/md -o css/md/ -r --output-style compressed",
+    "sm": "node-sass -w scss/sm -o css/sm/ -r --output-style compressed",
+    "xs": "node-sass -w scss/xs -o css/xs/ -r --output-style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "swiper": "^9.0.5"
+  }
+}
