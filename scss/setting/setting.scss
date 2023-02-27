@@ -8,6 +8,9 @@
     background-color: #cccccc;
     color: #000000;
 }
+html{
+    overflow-x: hidden;
+}
 @font-face {
     font-family: sans-regular;
     src: url(../../font/sans-regular.eot);
@@ -38,15 +41,33 @@ body{
 .active{
     display: block !important;
 }
-.active-flex{
-    display: flex !important;
+@media screen and (min-width:1200px){
+    .active-flex{
+        display: flex !important;
+    }
+    .active-delayed{
+        display: block !important;
+        animation: fadeIn;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
+    }
 }
-.active-delayed{
-    display: block !important;
-    animation: fadeIn;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
+@media screen and (max-width:1200px){
+    .active-flex{
+        display: flex !important;
+        left: 0 !important;
+    }
+    .active-delayed{
+        display: block !important;
+        animation: fadeIn;
+        animation-duration: 400ms;
+        animation-fill-mode: forwards;
+    }
+    .clickButtonMenu{
+        background-color: #ffffff !important;
+    }
 }
+
 .close{
     display: none !important;
 }

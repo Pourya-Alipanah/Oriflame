@@ -6,15 +6,15 @@ nav{
         background-color: #cccccc8c;
         position: absolute;
         top: 0;
-        left: 331.6px;
         z-index: 3;
     }
     >div.mainBar{
         >div.left{
             >div.sideNav{
                 display: flex;
-                flex-direction: column;
-                width: 331.6px;
+                flex-flow: column nowrap;
+                width: 84.5vw;
+                max-width: 331.6px;
                 height: 100vh;
                 background-color: $white;
                 overflow-y: scroll;
@@ -36,6 +36,7 @@ nav{
                         display: flex;
                         flex-flow: row nowrap;
                         align-items: center;
+                        text-align: left;
                         cursor: pointer;
                         font-size: 10px;
                         font-weight: 600;

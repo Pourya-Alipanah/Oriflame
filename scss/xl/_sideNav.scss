@@ -24,6 +24,9 @@ nav{
                 top: 80px;
                 left: 0;
                 z-index: 4;
+                >div.navButton{
+                    display: none;
+                }
                 >ul{
                     list-style: none;
                     display: flex;

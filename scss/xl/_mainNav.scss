@@ -7,6 +7,16 @@ nav{
     box-shadow: 0px 2px 3px #f5f5f5;
     z-index: 9;
     user-select: none;
+    >div.subSearchPage{
+        display: none;
+        width: 100vw ;
+        height: 100vh;
+        background-color: #cccccc8c;
+        position: absolute;
+        top: 56px + 68px;
+        left: 0;
+        z-index: 3;
+    }
     >div.mainBar{
         width: inherit;
         height: inherit;
@@ -57,6 +67,9 @@ nav{
                     width: inherit;
                     height: inherit;
                 }
+            }
+            >div.searchLG{
+                display: none;
             }
             >a{
                 text-decoration: none;
