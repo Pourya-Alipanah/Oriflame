@@ -1,2 +1,86 @@
 $black:#000;
 $white:#FFFFFF;
+
+/* Start Menu var & mixin & classes */
+
+@mixin border-left-sideNav($color){
+    border-left: 5px solid $color;
+};
+@mixin li-hover-setting($bgColor){
+    &:hover{
+        background-color: $bgColor ;
+        >div{
+            display: flex;
+        }
+    }
+};
+@mixin li-border-hover-setting($color , $bgColor){
+    border-left: 5px solid $color;
+    &:hover{
+        background-color: $bgColor ;
+        >div{
+            display: flex;
+        }
+    }
+};
+%link-menu{
+    padding: 20px 20px 20px 45px;
+                            >div{
+                                width: 190px;
+                                height: 100%;
+                                display: flex;
+                                flex-flow: column nowrap;
+                                align-items: center;
+                                margin-right: 2px;
+                                >div{
+                                    display: flex;
+                                    flex-flow: column nowrap;
+                                    width: 182.033px;
+                                    >div{
+                                        margin-bottom: 30px;
+                                        >a{
+                                            display: block;
+                                            text-decoration: none;
+                                            color: #333333;
+                                            margin-bottom: 10px;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            &:hover{
+                                                color: #999999;
+                                                font-weight: bold;
+                                            }
+                                        }
+                                        >a:first-of-type{
+                                            font-weight: 700;
+                                        }
+                                    }
+                                }
+                                div.new{
+                                    flex-flow: row nowrap;
+                                    height: 58px;
+                                    >img{
+                                        width: 28px;
+                                        height: 28px;
+                                        margin-right: 5px;
+                                    }
+                                }
+                                >div:first-of-type{
+                                    >a{
+                                        color: #333333;
+                                        font-size: 17px;
+                                        font-weight: 700;
+                                        text-decoration: none;
+                                        &:hover{
+                                            color: #999999;
+                                        }
+                                    }
+                                }
+                                >div:nth-of-type(2){
+                                    >div:first-of-type{
+                                        margin-bottom: 30px;
+                                    }
+                                }
+                            }
+};
+
+/* Start Menu var & mixin & classes */

@@ -7,6 +7,11 @@
     <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/main.css">
     <title>Oriflame</title>
+    <style>
+        body{
+            height: 2000px;
+        }
+    </style>
 </head>
 <body>
     <!-- Start Project @ Made By Pourya Alipanah -->
@@ -14,9 +19,512 @@
     <!-- Start Navbar -->
 
         <nav>
+            <div class="subPage"></div>
             <div class="mainBar">
                 <div class="left">
-                    <button><img src="./icon/menu/bars.svg" alt="hamburger"></button>
+                    <button id="hamburger"><img src="./icon/menu/bars.svg" alt="hamburger"><img src="./icon/menu/closeSearch.svg" alt="close"></button>
+
+                    <!-- Start SideNav -->
+
+                    <div class="sideNav">
+                        <ul>
+                            <li class="bestOffers">
+                                <a href="#">Best Offers</a>
+                                <div class="bestOffers"></div>
+                            </li>
+                            <li class="eCatalogue">
+                                <a href="#">eCatalogue</a>
+                                <div class="eCatalogue">
+                                    <div>
+                                        <div>
+                                            <a href="#">Catalogue 04</a>
+                                            <p>22.2.2023 - 15.3.2023</p>
+                                        </div>
+                                        <div>
+                                            <img src="./images/menu/catalogue.jpeg" alt="catalogue">
+                                        </div>
+                                        <div>
+                                            <a href="#">SEE ALL</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="Inspiration">
+                                <a href="#">Inspiration</a>
+                                <div class="Inspiration">
+                                    <div>
+                                        <img src="./images/menu/inspiration.jpeg" alt="inspiration">
+                                        <span>Editorials</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="skinCare">
+                                <a href="#">Skin care</a>
+                                <div class="skinCare">
+                                    <div>
+                                        <div class="new">
+                                            <img src="./icon/menu/whatsNew.svg" alt="whatsNew"><a href="#">What's new</a>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Moisturisers</a>
+                                                <a href="#">Day cream</a>
+                                                <a href="#">Night cream</a>
+                                                <a href="#">BB & CC cream</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Serum & Treatment</a>
+                                                <a href="#">Serum & Booster</a>
+                                                <a href="#">Exfoliator</a>
+                                                <a href="#">Acne & Blemish</a>
+                                                <a href="#">Neck & Décolletage</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Eye & Lip care</a>
+                                                <a href="#">Eye creams</a>
+                                                <a href="#">Lip care</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Cleansers</a>
+                                                <a href="#">Cleansers</a>
+                                                <a href="#">Make-up remover</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Mask</a>
+                                                <a href="#">Sheet masks</a>
+                                                <a href="#">Other masks</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Sun care</a>
+                                                <a href="#">Face sun cream</a>
+                                                <a href="#">Sunscreen</a>
+                                                <a href="#">After sun & Self-tanning</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Skin care tools</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Skin care sets</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Toner essences & Mist</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Brands</a>
+                                                <a href="#">NovAge</a>
+                                                <a href="#">Waunt</a>
+                                                <a href="#">Love Nature</a>
+                                                <a href="#">Optimals</a>
+                                                <a href="#">Royal Velvet</a>
+                                                <a href="#">Sun 360</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="Make-Up">
+                                <a href="#">Make-Up</a>
+                                <div class="Make-Up">
+                                    <div>
+                                        <div class="new">
+                                            <img src="./icon/menu/whatsNew.svg" alt="whatsNew"><a href="#">What's new</a>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Face</a>
+                                                <a href="#">Foundation</a>
+                                                <a href="#">Concealer & Corrector</a>
+                                                <a href="#">Powder</a>
+                                                <a href="#">Contour & Highlighter</a>
+                                                <a href="#">Blush & Bronzer</a>
+                                                <a href="#">BB & CC cream</a>
+                                                <a href="#">Primer & Setting mist</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Eyes</a>
+                                                <a href="#">Mascara</a>
+                                                <a href="#">Eyeliner</a>
+                                                <a href="#">Eyeshadow</a>
+                                                <a href="#">Eyebrows</a>
+                                                <a href="#">Eye make-up remover</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Lips</a>
+                                                <a href="#">Lipstick</a>
+                                                <a href="#">Lip gloss</a>
+                                                <a href="#">Lip liner</a>
+                                                <a href="#">Lip care</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Nails</a>
+                                                <a href="#">Nail polish</a>
+                                                <a href="#">Base & Topcoat</a>
+                                                <a href="#">Nail care</a>
+                                                <a href="#">Nail polish remover</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Make-up tools</a>
+                                                <a href="#">Brushes & Applicators</a>
+                                                <a href="#">Other make-up tools</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Palettes</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Brands</a>
+                                                <a href="#">THE ONE</a>
+                                                <a href="#">Giordani Gold</a>
+                                                <a href="#">OnColour</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="Fragrance">
+                                <a href="#">Fragrance</a>
+                                <div class="Fragrance">
+                                    <div>
+                                        <div class="new">
+                                            <img src="./icon/menu/whatsNew.svg" alt="whatsNew"><a href="#">What's new</a>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Women</a>
+                                                <a href="#">Fragrance</a>
+                                                <a href="#">Body care</a>
+                                                <a href="#">Body spray & Deodorant</a>
+                                                <a href="#">Gift set & Purse spray</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Men</a>
+                                                <a href="#">Fragrance</a>
+                                                <a href="#">Body spray & Deodorant</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Brands</a>
+                                                <a href="#">Eclat</a>
+                                                <a href="#">Giordani Gold</a>
+                                                <a href="#">Giordani Man</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="bathBody">
+                                <a href="#">Bath & Body</a>
+                                <div class="bathBody">
+                                    <div>
+                                        <div class="new">
+                                            <img src="./icon/menu/whatsNew.svg" alt="whatsNew"><a href="#">What's new</a>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Body care</a>
+                                                <a href="#">Body moisturiser</a>
+                                                <a href="#">Hand care</a>
+                                                <a href="#">Foot care</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Bath & Shower</a>
+                                                <a href="#">Body wash</a>
+                                                <a href="#">Soap</a>
+                                                <a href="#">Body scrub</a>
+                                                <a href="#">Other bath products</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Bath & Body tools</a>
+                                                <a href="#">Manicure & Pedicure</a>
+                                                <a href="#">Body sponges & Others</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Intimate care</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Oral care</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Suncare</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Hair removal</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="bigger">
+                                                <a href="#">Deodorants & Anti-perspirants</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Brands</a>
+                                                <a href="#">Swedish Spa</a>
+                                                <a href="#">Love Nature</a>
+                                                <a href="#">Feel Good</a>
+                                                <a href="#">Sun 360</a>
+                                                <a href="#">Feet Up</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="Hair">
+                                <a href="#">Hair</a>
+                                <div class="Hair">
+                                    <div>
+                                        <div class="new">
+                                            <img src="./icon/menu/whatsNew.svg" alt="whatsNew"><a href="#">What's new</a>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Shampoo</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Conditioner</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Styling products</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Treatments</a>
+                                                <a href="#">Hair mask</a>
+                                                <a href="#">Leave-in treatments</a>
+                                                <a href="#">Hair oil</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Hair tools & Accessories</a>
+                                                <a href="#">Hair brushes & Combs</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Brands</a>
+                                                <a href="#">Eleo</a>
+                                                <a href="#">Beautanicals</a>
+                                                <a href="#">HairX</a>
+                                                <a href="#">Milk & Honey Gold</a>
+                                                <a href="#">Love Nature</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="Accessories">
+                                <a href="#">Accessories</a>
+                                <div class="Accessories">
+                                    <div>
+                                        <div class="new">
+                                            <img src="./icon/menu/whatsNew.svg" alt="whatsNew"><a href="#">What's new</a>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Jewellery</a>
+                                                <a href="#">Earrings</a>
+                                                <a href="#">Necklaces</a>
+                                                <a href="#">Watches & Others</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Fashion accessories</a>
+                                                <a href="#">Bags & Purses</a>
+                                                <a href="#">Sunglasses</a>
+                                                <a href="#">Others</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Gifts</a>
+                                                <a href="#">Gifts for her</a>
+                                                <a href="#">Gifts for him</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Brands</a>
+                                                <a href="#">Norrsken</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="Wellness">
+                                <a href="#">Wellness</a>
+                                <div class="Wellness">
+                                    <div>
+                                        <div class="new">
+                                            <img src="./icon/menu/whatsNew.svg" alt="whatsNew"><a href="#">What's new</a>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Supplements & Nutrition</a>
+                                                <a href="#">Shakes</a>
+                                                <a href="#">Soups</a>
+                                                <a href="#">Vitamins & Minerals</a>
+                                                <a href="#">Antioxidants</a>
+                                                <a href="#">Omega 3</a>
+                                                <a href="#">Gut health</a>
+                                                <a href="#">Skin & Hair</a>
+                                                <a href="#">Kids</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Full solutions</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Accessories</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Brands</a>
+                                                <a href="#">Wellness by Oriflame</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="Men">
+                                <a href="#">Men</a>
+                                <div class="Men">
+                                    <div>
+                                        <div class="new">
+                                            <img src="./icon/menu/whatsNew.svg" alt="whatsNew"><a href="#">What's new</a>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Skin care</a>
+                                                <a href="#">Cleanser</a>
+                                                <a href="#">Moisturiser & Treatments</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Shaving & Grooming</a>
+                                                <a href="#">Shaving</a>
+                                                <a href="#">Beard care</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Body & Shower</a>
+                                                <a href="#">Shower gel</a>
+                                                <a href="#">Soap bar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Hair</a>
+                                                <a href="#">Shampoo</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Accessories</a>
+                                                <a href="#">Shaving & Grooming</a>
+                                                <a href="#">Gifts for him</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Fragrance</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Wellness</a>
+                                            </div>
+                                            <div class="bigger">
+                                                <a href="#">Deodorants & Anti-perspirants</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Brands</a>
+                                                <a href="#">Eclat</a>
+                                                <a href="#">Giordani Man</a>
+                                                <a href="#">North for Men</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="kidsBaby">
+                                <a href="#">Kids & Baby</a>
+                                <div class="kidsBaby">
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Kids</a>
+                                                <a href="#">Hair & Body wash</a>
+                                                <a href="#">Body care</a>
+                                                <a href="#">Oral care</a>
+                                                <a href="#">Fragrance</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Baby</a>
+                                                <a href="#">Hair & Body wash</a>
+                                                <a href="#">Body care</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <a href="#">Brands</a>
+                                                <a href="#">Baby O</a>
+                                                <a href="#">Love Nature</a>
+                                                <a href="#">Optifresh</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="Novelties">
+                                <a href="#">Novelties</a>
+                            </li>
+                            <li class="Rewards">
+                                <a href="#">Beauty Rewards Programme</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- End SideNav -->
+
                     <button><img src="./icon/menu/user.svg" alt="user"></button>
                     <button><img src="./icon/menu/MglassLG.svg" alt="MglassLG"></button>
                     <a href="#">Our story</a>
@@ -53,6 +561,10 @@
     <footer></footer>
 
     <!-- End Footer -->
+
+
+    <!-- Script tags -->
+    <script src="./js/main.js"></script>
     
     <!-- End Project -->
 </body>

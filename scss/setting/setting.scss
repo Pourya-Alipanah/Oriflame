@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*::selection{
+    background-color: #cccccc;
+    color: #000000;
 }
 @font-face {
     font-family: sans-regular;
@@ -13,4 +18,41 @@
 }
 body{
     font-family: sans-regular;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.active{
+    display: block !important;
+}
+.active-flex{
+    display: flex !important;
+}
+.active-delayed{
+    display: block !important;
+    animation: fadeIn;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+.close{
+    display: none !important;
+}
+.close-delayed{
+    display: none !important;
+    animation: fadeOut;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
 }

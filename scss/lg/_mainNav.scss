@@ -4,6 +4,9 @@ nav{
     position: sticky;
     top: 0;
     border-bottom: 2px solid #f5f5f5;
+    box-shadow: 0px 2px 3px #f5f5f5;
+    z-index: 9;
+    user-select: none;
     >div.mainBar{
         width: inherit;
         height: inherit;
@@ -29,6 +32,11 @@ nav{
                 height: 30px;
                 margin-right: 32px;
                 >img{
+                    width: inherit;
+                    height: inherit;
+                }
+                >img:nth-of-type(2){
+                    display: none;
                     width: inherit;
                     height: inherit;
                 }

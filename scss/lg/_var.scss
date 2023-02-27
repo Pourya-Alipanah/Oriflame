@@ -1,2 +1,5 @@
 $black:#000;
 $white:#FFFFFF;
+@mixin border-left-sideNav($color){
+    border-left: 5px solid $color;
+}
