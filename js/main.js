@@ -37,18 +37,23 @@ let buttonMenuProducts = document.querySelector(
 );
 let buttonMenuUser = document.querySelector("div.navButton>button.user");
 let accordionMenu = document.querySelector("div.accordionMenu");
+let login = document.querySelector("div.login");
 
 buttonMenuProducts.addEventListener("click", function () {
   this.classList.add("clickButtonMenu");
   accordionMenu.classList.add("active-flex");
+  login.classList.remove("active-flex");
   buttonMenuUser.classList.remove("clickButtonMenu");
 });
+
 if (buttonMenuProducts.autofocus) {
   buttonMenuProducts.click();
-}
+};
+
 buttonMenuUser.addEventListener("click", function () {
   this.classList.add("clickButtonMenu");
   accordionMenu.classList.remove("active-flex");
+  login.classList.add("active-flex");
   buttonMenuProducts.classList.remove("clickButtonMenu");
 });
 
