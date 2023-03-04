@@ -21,6 +21,7 @@
         <nav>
             <div class="subPage"></div>
             <div class="subSearchPage"></div>
+            <div class="subRegisterPage"></div>
             <div class="mainBar">
                 <div class="left">
                     <button id="hamburger"><img src="./icon/menu/bars.svg" alt="hamburger"><img src="./icon/menu/closeSearch.svg" alt="close"></button>
@@ -1062,7 +1063,7 @@
 
                     <!-- End SideNav -->
 
-                    <button><img src="./icon/menu/user.svg" alt="user"></button>
+                    <button id="user"><img src="./icon/menu/user.svg" alt="user"></button>
                     <button id="MglassLG"><img src="./icon/menu/MglassLG.svg" alt="MglassLG"></button>
                     <div class="searchLG">
                         <div class="search">
@@ -1070,6 +1071,28 @@
                             <input type="search" name="search" id="search" placeholder="Search">
                             <span><img src="./icon/menu/closeSearch.svg" alt="close"></span>
                         </div>
+                    </div>
+                    <div class="loginBig">
+                        <div class="signIn">Sign in</div>
+                        <form action="#" method="post">
+                            <div>
+                                <label for="email-number">Email address or registration number*</label>
+                                <input type="text" name="email-number" id="email-number">
+                            </div>
+                            <div>
+                                <label for="pass">Password*</label>
+                                <input type="text" name="pass" id="pass">
+                            </div>
+                            <button type="submit">SIGN IN</button>
+                        </form>
+                        <a href="#">Forgot password?</a>
+                        <button><img src="./icon/menu/facebook.svg" alt="facebook"><span>Continue with Facebook</span></button>
+                        <div class="register">Register</div>
+                        <div class="addition">
+                            <a href="#">VIP Customer</a>
+                            <a href="#">Brand Partner</a>
+                        </div>
+                        <a href="#">I don't know yet</a>
                     </div>
                     <a href="#">Our story</a>
                     <a href="#">Join us</a>
@@ -1083,7 +1106,19 @@
                         <input type="search" name="search" id="search" placeholder="Search">
                         <span><img src="./icon/menu/closeSearch.svg" alt="close"></span>
                     </div>
-                    <span><img src="./icon/menu/bag.svg" alt="bag"></span>
+                    <span>
+                        <img src="./icon/menu/bag.svg" alt="bag">
+                        <div class="shoppingBag">
+                            <a href="#">Shopping bag (0)</a>
+                            <div class="text">
+                                <p>Empty bag</p>
+                                <span>- Looking pretty empty in your bag -</span>
+                            </div>
+                            <div class="btn">
+                                <button>GO TO BASKET</button>
+                            </div>
+                        </div>
+                    </span>
                 </div>
             </div>
         </nav>

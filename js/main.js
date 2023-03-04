@@ -1,21 +1,18 @@
+/* Start Define open navbar for xxl and xl sizes */
+
 let openerSideNav = document.querySelector("button#hamburger");
 let sideNav = document.querySelector("div.sideNav");
 let subPage = document.querySelector("div.subPage");
-let menuButtonIcon = document.querySelector(
-  "button#hamburger>img:first-of-type"
-);
-let closeButtonIcon = document.querySelector(
-  "button#hamburger>img:nth-of-type(2)"
-);
-let searchButtonLg = document.querySelector("button#MglassLG");
-let seacrhBarLg = document.querySelector("div.searchLG");
-let subSearchPage = document.querySelector("div.subSearchPage");
+let menuButtonIcon = document.querySelector("button#hamburger>img:first-of-type");
+let closeButtonIcon = document.querySelector("button#hamburger>img:nth-of-type(2)");
 
 openerSideNav.addEventListener("click", function () {
   sideNav.classList.toggle("active-flex");
   subPage.classList.toggle("active-delayed");
   menuButtonIcon.classList.toggle("close");
   closeButtonIcon.classList.toggle("active-delayed");
+  loginBig.classList.remove("active-flex")
+  subRegPage.classList.remove("active-delayed");
 });
 subPage.addEventListener("click", function () {
   sideNav.classList.toggle("active-flex");
@@ -23,6 +20,15 @@ subPage.addEventListener("click", function () {
   menuButtonIcon.classList.toggle("close");
   closeButtonIcon.classList.toggle("active-delayed");
 });
+
+/* End Define open navbar for xxl and xl sizes */
+
+/* Start Define open searchBar for smaller sizes */
+
+let searchButtonLg = document.querySelector("button#MglassLG");
+let seacrhBarLg = document.querySelector("div.searchLG");
+let subSearchPage = document.querySelector("div.subSearchPage");
+
 searchButtonLg.addEventListener("click", function () {
   seacrhBarLg.classList.toggle("active-flex");
   subSearchPage.classList.toggle("active-delayed");
@@ -32,9 +38,32 @@ subSearchPage.addEventListener("click", function () {
   subSearchPage.classList.toggle("active-delayed");
 });
 
-let buttonMenuProducts = document.querySelector(
-  "div.navButton>button.products"
-);
+/* End Define open searchBar for smaller sizes */
+
+/* Start Define open LoginBar for xxl and xl sizes */
+
+let loginBig = document.querySelector("div.loginBig");
+let userButton = document.querySelector("button#user");
+let subRegPage = document.querySelector("div.subRegisterPage");
+
+userButton.addEventListener("click" , function(){
+  loginBig.classList.toggle("active-flex")
+  subRegPage.classList.toggle("active-delayed");
+  sideNav.classList.remove("active-flex");
+  subPage.classList.remove("active-delayed");
+  menuButtonIcon.classList.remove("close");
+  closeButtonIcon.classList.remove("active-delayed");
+});
+subRegPage.addEventListener("click", function () {
+  loginBig.classList.toggle("active-flex");
+  subRegPage.classList.toggle("active-delayed");
+});
+
+/* End Define open LoginBar for xxl and xl sizes */
+
+/* Start Define open navbar for smaller sizes */
+
+let buttonMenuProducts = document.querySelector("div.navButton>button.products");
 let buttonMenuUser = document.querySelector("div.navButton>button.user");
 let accordionMenu = document.querySelector("div.accordionMenu");
 let login = document.querySelector("div.login");
@@ -57,7 +86,9 @@ buttonMenuUser.addEventListener("click", function () {
   buttonMenuProducts.classList.remove("clickButtonMenu");
 });
 
-/* accordion menu elements */
+/* End Define open navbar for smaller sizes */
+
+/* Start accordion menu elements */
 
 let acc = document.getElementsByClassName("accordion");
 
@@ -124,4 +155,5 @@ let accColorKids = document.querySelector(".accordion-color-kids");
 accColorKids.addEventListener("click", function () {
   this.classList.toggle("active-accordion-color-kids");
 });
+
 /* End accordion menu elements */

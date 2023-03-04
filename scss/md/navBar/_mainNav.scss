@@ -16,6 +16,9 @@ nav{
         left: 0;
         z-index: 3;
     }
+    >div.subRegisterPage{
+        display: none !important;
+    }
     >div.mainBar{
         width: inherit;
         height: inherit;
@@ -213,6 +216,9 @@ nav{
                 position: relative;
                 top: 2.5px;
                 cursor: pointer;
+                >div.shoppingBag{
+                    display: none !important;
+                }
             }
         }
     }
