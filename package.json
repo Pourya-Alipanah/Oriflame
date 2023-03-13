@@ -18,7 +18,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "live-server": "^1.2.2",
     "node-sass": "^8.0.0",
-    "swiper": "^9.0.5"
+    "swiper": "^9.1.0"
   }
 }

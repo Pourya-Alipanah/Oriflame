@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Oriflame</title>
     <style>
@@ -1098,7 +1099,7 @@
                     <a href="#">Join us</a>
                 </div>
                 <div class="center">
-                    <img src="./icon/menu/logo.svg" alt="logo">
+                    <a href="#"><img src="./icon/menu/logo.svg" alt="logo"></a>
                 </div>
                 <div class="right">
                     <div class="search">
@@ -1107,7 +1108,7 @@
                         <span><img src="./icon/menu/closeSearch.svg" alt="close"></span>
                     </div>
                     <span>
-                        <img src="./icon/menu/bag.svg" alt="bag">
+                        <a href="#"><img src="./icon/menu/bag.svg" alt="bag"></a>
                         <div class="shoppingBag">
                             <a href="#">Shopping bag (0)</a>
                             <div class="text">
@@ -1129,7 +1130,59 @@
 
     <main>
         <div class="wrapper">
-            
+            <!-- Start slider -->
+
+            <div class="slider-group">
+                <div class="topSlider">
+                    <p>Free delivery for our VIP Customers. Find out more!</p>
+                    <span id="topSliderClose"><img src="./icon/slider/whiteClose.svg" alt="whiteClose"></span>
+                </div>
+                <div class="slider">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <img src="./images/slider/1.jpeg" alt="1">
+                                    <div class="data">
+                                        <div>New THE ONE Won<span>der Lash Mascara</span></div>
+                                        <div>Enhancing lash<span>es in all realities</span></div>
+                                        <div>
+                                            <button>Get the blackest mascara</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <img src="./images/slider/2.jpeg" alt="2">
+                                    <div class="data">
+                                        <div>Oriflame Awards</div>
+                                        <div>And the award goes to…</div>
+                                        <div>
+                                            <button>See the winners</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <img src="./images/slider/3.jpeg" alt="3">
+                                    <div class="data">
+                                        <div>Get inspired by this season<span>'s key tre</span>nds</div>
+                                        <div>Spring in blo<span>om</span></div>
+                                        <div>
+                                            <button>Shop now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- End slider -->
         </div>
     </main>
 
@@ -1144,7 +1197,27 @@
 
     <!-- Script tags -->
     <script src="./js/main.js"></script>
+    <script src="./swiper/swiper-bundle.min.js"></script>
     
+    <!--  Start initial swiper script  -->
+
+    <script>
+            var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 0,
+            centeredSlides: true,
+            autoplay: {
+            delay: 9000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+    </script>
+
+    <!--  End initial swiper script  -->
+
     <!-- End Project -->
 </body>
 </html>

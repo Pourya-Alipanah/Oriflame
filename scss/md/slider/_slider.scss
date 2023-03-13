@@ -1,0 +1,127 @@
+main{
+    >div.wrapper{
+        >div.slider-group{
+            width: 100%;
+            height: 500px;
+            position: relative;
+            >div.topSlider{
+                z-index: 3;
+                width: 100%;
+                height: 50px;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                background-color: #007681cc;
+                position: absolute;
+                top: 0;
+                left: 0;
+                >p{
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+                >span{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    margin: auto 15px;
+                }
+            }
+            >div.slider{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                >div.swiper {
+                    width: 100%;
+                    height: 100%;
+                    >div.swiper-wrapper{
+                        >div.swiper-slide {
+                            text-align: center;
+                            font-size: 18px;
+                            background: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            >div.content{
+                                width: 100%;
+                                height: 100%;
+                                >img{
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: left;
+                                    z-index: 3;
+                                }
+                                >div.data{
+                                    width: auto;
+                                    display: flex;
+                                    flex-flow: column nowrap;
+                                    align-items: center;
+                                    position: absolute;
+                                    right: 50%;
+                                    bottom: 11%;
+                                    transform: translateX(50%);
+                                    z-index: 4;
+                                    >div{
+                                        width: 450px;
+                                        overflow: hidden;
+                                        text-align: center;
+                                        text-transform: uppercase;
+                                        color: #333333;
+                                        cursor: pointer;
+                                    }
+                                    >div:first-of-type{
+                                        max-width: 450px;
+                                        font-size: 12px;
+                                        font-weight: 700;
+                                        letter-spacing: 2.8px;
+                                        margin-bottom: 5px;
+                                    }
+                                    >div:nth-of-type(2){
+                                        max-width: 450px;
+                                        font-family: sans-serif ;
+                                        font-size: 23.2px;
+                                        font-weight: 700;
+                                        margin-bottom: 15px;
+                                    }
+                                    >div:nth-of-type(3){
+                                        display: flex;
+                                        justify-content: center;
+                                        >button{
+                                            all: unset;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            box-sizing: border-box;
+                                            max-width: 450px;
+                                            min-width: 150px;
+                                            height: 45px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            color: $white;
+                                            backdrop-filter: blur(8px);
+                                            background-color: #00000040;
+                                            border-radius: 25px;
+                                            font-size: 14px;
+                                            padding: 12px 19.5px;
+                                            font-weight: bold;
+                                            cursor: pointer;
+                                            transition: 300ms;
+                                            &:hover{
+                                                color: #333333;
+                                                background-color: #ffffff40;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -157,3 +157,15 @@ accColorKids.addEventListener("click", function () {
 });
 
 /* End accordion menu elements */
+
+
+/* Start initial close Button for top slider */
+
+let closeButton = document.querySelector("span#topSliderClose");
+
+closeButton.addEventListener("click" , function(){
+  closeButton.parentNode.remove();
+})
+
+/* End initial close Button for top slider */
+
