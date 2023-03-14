@@ -9,7 +9,7 @@
     color: #000000;
 }
 html{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 @font-face {
     font-family: sans-regular;
@@ -21,6 +21,7 @@ html{
 }
 body{
     font-family: sans-regular;
+    overflow-x: hidden !important;
 }
 @keyframes fadeIn {
     0%{

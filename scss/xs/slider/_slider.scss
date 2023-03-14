@@ -76,9 +76,6 @@ main{
                                         text-transform: uppercase;
                                         color: #333333;
                                         cursor: pointer;
-                                        >span{
-                                            color: $white;
-                                        }
                                     }
                                     >div:first-of-type{
                                         max-width: 450px;
@@ -121,6 +118,15 @@ main{
                                                 color: #333333;
                                             }
                                         }
+                                    }
+                                }
+                            }
+                        }
+                        >div.swiper-slide:first-of-type{
+                            >div.content{
+                                >div.data{
+                                    >div{
+                                        color: #efefef ;
                                     }
                                 }
                             }
