@@ -3,7 +3,7 @@ nav{
         display: none;
         width: 100vw ;
         height: 100vh;
-        background-color: #cccccc8c;
+        backdrop-filter: blur(4px);
         position: absolute;
         top: 0;
         z-index: 3;
@@ -50,10 +50,17 @@ nav{
                             height: 29px;
                             margin: 20px 10px;
                         }
+                    }
+                    >button:first-of-type{
                         >img:first-of-type{
                             width: 25px;
                             height: 25px;
                             margin: 20px 10px;
+                        }
+                    }
+                    >button:nth-of-type(2){
+                        >img:last-of-type{
+                            display: none;
                         }
                     }
                 }

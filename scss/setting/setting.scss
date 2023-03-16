@@ -21,7 +21,7 @@ html{
 }
 body{
     font-family: sans-regular;
-    overflow-x: hidden !important;
+    // overflow-x: hidden !important;
 }
 @keyframes fadeIn {
     0%{
@@ -43,6 +43,10 @@ body{
     display: block !important;
 }
 
+.inlineB-active{
+    display: inline-block !important;
+}
+
 @if (screen and (max-width:1200px)){
     .active-flex{
         display: flex !important;
@@ -56,6 +60,14 @@ body{
     }
     .clickButtonMenu{
         background-color: #ffffff !important;
+    }
+    .userFocusedIcon{
+        >img:first-of-type{
+            display: none !important;
+        }
+        >img:last-of-type{
+            display: inline-block !important;
+        }
     }
 }@else{
     .active-flex{

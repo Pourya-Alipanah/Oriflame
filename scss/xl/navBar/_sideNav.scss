@@ -3,7 +3,7 @@ nav{
         display: none;
         width: 100%;
         height: calc(100vh - 80px);
-        background-color: #cccccc8c;
+        backdrop-filter: blur(4px);
         position: absolute;
         top: 80px;
         left: 0;
@@ -25,7 +25,7 @@ nav{
                 left: 0;
                 z-index: 4;
                 >div.navButton{
-                    display: none;
+                    display: none !important;
                 }
                 >div.accordionMenu{
                     display: none !important;

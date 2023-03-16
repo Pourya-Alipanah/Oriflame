@@ -15,7 +15,7 @@ nav{
         display: none;
         width: 100vw ;
         height: 100vh;
-        background-color: #cccccc8c;
+        backdrop-filter: blur(4px);
         position: absolute;
         top: 80px;
         right: 0;
@@ -59,6 +59,17 @@ nav{
                 margin-right: 40px;
                 position: relative;
                 top: 2.5px;
+                >img:last-of-type{
+                    display: none;
+                }
+                &:hover{
+                    >img:first-of-type{
+                        display: none;
+                    }
+                    >img:last-of-type{
+                        display: inline-block;
+                    }
+                }
             }
             >button:nth-of-type(3){
                 display: none;
@@ -148,6 +159,19 @@ nav{
                 margin-left: 60px;
                 margin-top: 2.5px;
                 cursor: pointer;
+                > a > img:last-of-type{
+                    display: none;
+                }
+                > a {
+                    &:hover{
+                        > img:first-of-type{
+                            display: none;
+                        }
+                        > img:last-of-type{
+                            display: inline-block;
+                        }
+                    }
+                }
                 &:hover{
                     >div.shoppingBag{
                         right: 0;

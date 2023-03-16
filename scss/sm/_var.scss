@@ -141,4 +141,183 @@ $white:#FFFFFF;
         }
     }
 }
-/* Start Menu var & mixin & classes */
+/* End Menu var & mixin & classes */
+
+/* Start posts var & mixin & classes */
+
+%post-title-1-setting{
+    height: 45px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%posts-button-setting{
+    min-width: 64px;
+    height: 45px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #333333;
+    border: 1px solid #333333;
+    border-radius: 25px;
+    padding: 12px 23px;
+    transition: 300ms;
+    &:hover{
+        background-color: #3333330a;
+    }
+}
+
+%banner-button-setting{
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 450px;
+    min-width: 64px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    backdrop-filter: blur(30px);
+    border: 1px solid transparent;
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 300ms;
+    background-color: #00000016;
+    color: $white;
+    &:hover{
+        color: #333333;
+        background-color: #ffffff16;
+    }
+}
+
+%product-list-settings{
+>div{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3,1fr);
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    >div{
+        display: flex;
+        flex-flow: column nowrap;
+        color: #555555;
+        user-select: none;
+        cursor: pointer;
+        &:hover{
+            >div:first-of-type>img{
+                transform: scale(1.1);
+            }
+        }
+        >div:first-of-type{
+            position: relative;
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            >img{
+                border-radius: inherit;
+                width: 100%;
+                transition: 400ms;
+                transform: scale(1);
+            }
+            &::before{
+                content: "new";
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                cursor: default;
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+                font-weight: bold;
+                text-transform: uppercase;
+                border-radius: 5px;
+                height: 26px;
+                max-width: 100%;
+                background-color: #63666a;
+                color: $white;
+                padding: 0 10px;
+            }
+            >span{
+                position: absolute;
+                right: 10px;
+                bottom: 15px;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 1px -2px, rgba(0, 0, 0, 0.1) 0px 2px 2px 0px, rgba(0, 0, 0, 0.08) 0px 1px 5px 0px;
+                background-color: $white;
+                >img{
+                    width: 22px;
+                    height: 22px;
+                }
+                >img:last-of-type{
+                    display: none;
+                }
+                &:hover{
+                    >img:first-of-type{
+                        display: none;
+                    }
+                    >img:last-of-type{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        >div:nth-of-type(2){
+            color: rgb(85, 85, 85);
+            font-size: 10px;
+            height: 15px;
+            letter-spacing: 2px;
+            margin: 10px 0px;
+            text-transform: uppercase;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        >div:nth-of-type(3){
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            height: 38px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            width: 100%;
+        }
+        >div:nth-of-type(4){
+            display: flex;
+            align-items: center;
+            flex-flow: row wrap;
+            font-size: 14px;
+            max-height: 42px;
+            width: 100%;
+            color: #555555;
+            font-weight: 700;
+            >del{
+                color: #999999;
+                max-width: 50%;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+}
+
+/* End posts var & mixin & classes */

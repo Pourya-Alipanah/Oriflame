@@ -13,6 +13,8 @@ openerSideNav.addEventListener("click", function () {
   closeButtonIcon.classList.toggle("active-delayed");
   loginBig.classList.remove("active-flex")
   subRegPage.classList.remove("active-delayed");
+  userFocusedButtonIcon.classList.remove("inlineB-active");
+  userButtonIcon.classList.remove("close");
 });
 subPage.addEventListener("click", function () {
   sideNav.classList.toggle("active-flex");
@@ -44,6 +46,8 @@ subSearchPage.addEventListener("click", function () {
 
 let loginBig = document.querySelector("div.loginBig");
 let userButton = document.querySelector("button#user");
+let userButtonIcon = document.querySelector("button#user>img:first-of-type");
+let userFocusedButtonIcon = document.querySelector("button#user>img:last-of-type");
 let subRegPage = document.querySelector("div.subRegisterPage");
 
 userButton.addEventListener("click" , function(){
@@ -53,10 +57,14 @@ userButton.addEventListener("click" , function(){
   subPage.classList.remove("active-delayed");
   menuButtonIcon.classList.remove("close");
   closeButtonIcon.classList.remove("active-delayed");
+  userButtonIcon.classList.toggle("close");
+  userFocusedButtonIcon.classList.toggle("inlineB-active");
 });
 subRegPage.addEventListener("click", function () {
   loginBig.classList.toggle("active-flex");
   subRegPage.classList.toggle("active-delayed");
+  userButtonIcon.classList.toggle("close");
+  userFocusedButtonIcon.classList.toggle("inlineB-active")
 });
 
 /* End Define open LoginBar for xxl and xl sizes */
@@ -73,6 +81,7 @@ buttonMenuProducts.addEventListener("click", function () {
   accordionMenu.classList.add("active-flex");
   login.classList.remove("active-flex");
   buttonMenuUser.classList.remove("clickButtonMenu");
+  buttonMenuUser.classList.remove("userFocusedIcon");
 });
 
 if (buttonMenuProducts.autofocus) {
@@ -81,6 +90,7 @@ if (buttonMenuProducts.autofocus) {
 
 buttonMenuUser.addEventListener("click", function () {
   this.classList.add("clickButtonMenu");
+  this.classList.add("userFocusedIcon")
   accordionMenu.classList.remove("active-flex");
   login.classList.add("active-flex");
   buttonMenuProducts.classList.remove("clickButtonMenu");

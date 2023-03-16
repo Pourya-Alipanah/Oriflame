@@ -11,7 +11,7 @@ nav{
         display: none;
         width: 100vw ;
         height: 100vh;
-        background-color: #cccccc8c;
+        backdrop-filter: blur(4px);
         position: absolute;
         top: 56px + 68px;
         left: 0;
@@ -219,6 +219,9 @@ nav{
                 position: relative;
                 top: 2.5px;
                 cursor: pointer;
+                > a > img:last-of-type{
+                    display: none;
+                }
                 >div.shoppingBag{
                     display: none !important;
                 }
