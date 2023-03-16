@@ -4,6 +4,7 @@ nav{
         width: 100%;
         height: calc(100vh - 80px);
         backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
         position: absolute;
         top: 80px;
         left: 0;

@@ -1,9 +1,10 @@
 nav{
     >div.subPage{
         display: none;
-        width: 100vw ;
+        width: calc(100vw - 331.6px) ;
         height: 100vh;
         backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
         position: absolute;
         top: 0;
         left: 331.6px;
