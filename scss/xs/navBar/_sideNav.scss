@@ -1,408 +1,417 @@
-nav{
-    >div.subPage{
-        display: none;
-        width: 100vw ;
+nav {
+  > div.subPage {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    position: absolute;
+    top: 0;
+    z-index: 3;
+  }
+  > div.mainBar {
+    > div.left {
+      > div.sideNav {
+        display: flex;
+        flex-direction: column;
+        width: 84.5vw;
+        max-width: 331.6px;
         height: 100vh;
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
+        background-color: $white;
+        overflow: hidden;
+        border: 1px solid #f5f5f5;
         position: absolute;
         top: 0;
-        z-index: 3;
-    }
-    >div.mainBar{
-        >div.left{
-            >div.sideNav{
-                display: flex;
-                flex-direction: column;
-                width: 84.5vw;
-                max-width: 331.6px;
-                height: 100vh;
-                background-color: $white;
-                overflow: hidden;
-                border: 1px solid #f5f5f5;
-                position: absolute;
-                top: 0;
-                transition: 200ms;
-                left: -100%;/* -100% */
-                z-index: 4;
-                >div.navButton{
-                    width: 100%;
-                    height: 54px;
-                    display: flex;
-                    flex-flow: row nowrap;
-                    justify-content: space-between;
-                    >button{
-                        width: 50%;
-                        display: flex;
-                        flex-flow: row nowrap;
-                        align-items: center;
-                        text-align: left;
-                        cursor: pointer;
-                        font-size: 10px;
-                        font-weight: 600;
-                        font-family: sans-regular;
-                        color: #333333;
-                        border: unset;
-                        outline: unset;
-                        background-color: #f5f5f5;
-                        text-transform: uppercase;
-                        >img{
-                            width: 29px;
-                            height: 29px;
-                            margin: 20px 10px;
-                        }
-                    }
-                    >button:first-of-type{
-                        >img:first-of-type{
-                            width: 25px;
-                            height: 25px;
-                            margin: 20px 10px;
-                        }
-                    }
-                    >button:nth-of-type(2){
-                        >img:last-of-type{
-                            display: none;
-                        }
-                    }
-                }
-                >div.accordionMenu{
-                    display: none;
-                    flex-flow: column nowrap;
-                    height: inherit;
-                    overflow-y: scroll;
-                    overflow-x: hidden;
-                    margin-bottom: 5px;
-                    >a{
-                        display: flex;
-                        flex-flow: row nowrap;
-                        align-items: center;
-                        margin-bottom: 5px;
-                        width: 100%;
-                        height: 37px;
-                        min-height: 37px;
-                        font-family: sans-regular;
-                        font-size: 14px;
-                        font-weight: 700;
-                        text-decoration: none;
-                        padding-left: 30px;
-                        box-sizing: border-box;
-                        color: #333333;
-                    }
-                    >a:first-of-type:focus{
-                        background-color: #FBFBFB;
-                    }
-                    >a:nth-of-type(2) , a:nth-of-type(3){
-                        &:hover{
-                            color: #777777;
-                        }
-                    }
-                    >button.accordion , button.accordion-color {
-                        @extend %accordion-button-settings;
-                        @include border-left-sideNav(transparent);
-                    }
-                    >button.accordion:nth-of-type(3){
-                        @include border-left-sideNav(#91e7e3);
-                    }
-                    >button.accordion:nth-of-type(4){
-                        @include border-left-sideNav(#e793b7)
-                    }
-                    >button.accordion:nth-of-type(5){
-                        @include border-left-sideNav(#b6ada5)
-                    }
-                    >button.accordion:nth-of-type(6){
-                        @include border-left-sideNav(#2774ae)
-                    }
-                    >button.accordion:nth-of-type(7){
-                        @include border-left-sideNav(#f0c264)
-                    }
-                    >button.accordion:nth-of-type(8){
-                        @include border-left-sideNav(#ff8072)
-                    }
-                    >button.accordion:nth-of-type(9){
-                        @include border-left-sideNav(#685bc7)
-                    }
-                    >button.accordion:nth-of-type(10){
-                        @include border-left-sideNav(#007681)
-                    }
-                    >button.accordion:nth-of-type(11){
-                        @include border-left-sideNav(#7ed1ea)
-                    }
-                    >div.panel {
-                        @extend %accordion-panel-settings;
-                        >div.eCatalogue{
-                            justify-content: center;
-                            align-items: center;
-                            >div{
-                                width: 250px;
-                                display: flex;
-                                flex-flow: column nowrap;
-                                >div:first-of-type{
-                                    display: flex;
-                                    flex-flow: column nowrap;
-                                    justify-content: center;
-                                    align-items: center;
-                                    >a{
-                                        display: block;
-                                        text-decoration: none;
-                                        color: $black;
-                                        font-size: 17px;
-                                        font-weight: bold;
-                                        
-                                    }
-                                    >p{
-                                        color: #666666;
-                                        text-align: center;
-                                        font-size: 14px;
-                                        margin: 10px 0 15px 0;
-                                    }
-                                }
-                                >div:nth-of-type(2){
-                                    width: inherit;
-                                    height: 354.7px;
-                                    border-radius: 10px;
-                                    >img{
-                                        transition: 500ms;
-                                        cursor: pointer;
-                                        width: 100%;
-                                        border-radius: inherit;
-                                    }
-                                }
-                                >div:nth-of-type(3){
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    width: inherit;
-                                    height: 22.4px;
-                                    margin-top:12px;
-                                    >a{
-                                        text-decoration: underline 2px;
-                                        color: #333333;
-                                        font-size: 14px;
-                                        font-weight: 700;
-                                        text-underline-offset: 5px;
-                                    }
-                                }
-                            }
-                        }
-                        >div.Inspiration{
-                            width: 100%;
-                            height: 54px;
-                            display: flex;
-                            flex-flow: row nowrap;
-                            align-items: center;
-                            >a{
-                                display: block;
-                                width: inherit;
-                                height: 41px;
-                                text-decoration: none;
-                                color: #333333;
-                                font-size: 14px;
-                                padding: 10px 0 10px 55px;
-                                &:hover{
-                                    color: #007681;
-                                    font-weight: bold;
-                                }
-                            }
-                        }
-                        >div.skinCare , div.Make-Up , div.Fragrance , div.bathBody , div.Hair , div.Accessories , div.Wellness , div.Men , div.kidsBaby{
-                            @extend %sub-accordion-full-settings;
-                        }
-                    }
-                    div.footNav{
-                        display: flex;
-                        flex-flow: column nowrap;
-                        justify-content: center;
-                        align-items: center;
-                        width: 100%;
-                        >a{
-                            display: block;
-                            text-decoration: none;
-                            width: inherit;
-                            color: #333333;
-                            font-size: 14px;
-                            font-weight: 700;
-                            text-align: center;
-                            background-color: #f5f5f5;
-                            padding: 7px 0;
-                            &:hover{
-                                color: #666666;
-                            }
-                        }
-                        >a:last-of-type{
-                            background-color: unset;
-                            margin: 15px 0;
-                            display: flex;
-                            flex-flow: row nowrap;
-                            align-items: center;
-                            justify-content: center;
-                            >img{
-                                transform: rotateY(180deg);
-                                margin-right: 5px;
-                            }
-                        }
-                    }
-                }
-                >div.login{
-                    width: 100%;
-                    height: 513.4px;
-                    padding: 15px 20px;
-                    display: none;
-                    flex-flow: column nowrap;
-                    align-items: center;
-                    >div.signIn{
-                        margin-bottom: 10px;
-                        text-align: center;
-                        font-size: 20px;
-                        font-weight: 700;
-                        color: #333333;
-                    }
-                    >form{
-                        display: flex;
-                        flex-flow: column nowrap;
-                        width: 100%;
-                        color: #333333;
-                        >div{
-                            position: relative;
-                            margin-bottom: 20px;
-                            &::after{
-                                content: "";
-                                box-sizing: content-box;
-                                width: 100%;
-                                border-bottom: 2px solid #cccccc;
-                                position: absolute;
-                                left: 0;
-                                bottom: -1px;
-                            }
-                            >label{
-                                margin-bottom: 3px;
-                                display: block;
-                                font-size: 10px;
-                                font-weight: normal;
-                                white-space: nowrap;
-                                text-overflow: ellipsis;
-                            }
-                            >input{
-                                font-size: 14px;
-                                width: 100%;
-                                height: 29px;
-                                min-width: 0%;
-                                border: unset;
-                                padding: 4px 0px 5px 0px;
-                                outline: unset;
-                                position: relative;
-                            }
-                        }
-                        >button{
-                            width: 100%;
-                            height: 40px;
-                            font-family: sans-regular;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            border: unset;
-                            margin-top: 5px;
-                            font-size: 14px;
-                            font-weight: bold;
-                            cursor: pointer;
-                            color: $white;
-                            background-color: #68bb93;
-                            border-radius: 25px;
-                            transition: 300ms;
-                            &:hover{
-                                background-color: #489671;
-                            }
-                        }
-                    }
-                    >a{
-                        font-family: sans-regular;
-                        line-height: 1.5;
-                        color: #333333;
-                        cursor: pointer;
-                        font-size: 12px;
-                        font-weight: 700;
-                        margin: 10px 0;
-                        &:hover{
-                            font-weight: bold;
-                            color: #282828;
-                        }
-                    }
-                    >a:nth-of-type(2){
-                        font-size: 12px;
-                        color: #555555;
-                        &:hover{
-                            color: #666666;
-                        }
-                    }
-                    >button{
-                        width: 100%;
-                        height: 40px;
-                        font-family: sans-regular;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        border: unset;
-                        margin-top: 15px;
-                        font-size: 12px;
-                        font-weight: bold;
-                        cursor: pointer;
-                        color: #333333;
-                        background-color: $white;
-                        border-radius: 25px;
-                        transition: 300ms;
-                        box-shadow: 0 3px 6px #cccccc;
-                        >span{
-                            margin: 0 auto 0 48px;
-                        }
-                        >img{
-                            margin-left: 5px;
-                        }
-                    }
-                    >div.register{
-                        width: 100%;
-                        display: flex;
-                        justify-content: center;
-                        font-size: 20px;
-                        color: #555555;
-                        font-weight: 700;
-                        margin-top: 20px;
-                    }
-                    >div.addition{
-                        margin: 15px 0 10px 0;
-                        width: 330px;
-                        max-width: 330px;
-                        color: #333333;
-                        display: flex;
-                        flex-flow: column nowrap;
-                        >a{
-                            display: block;
-                            text-decoration: none;
-                            width: 100%;
-                            color: #333333;
-                            font-size: 14px;
-                            font-weight: 700;
-                            text-align: center;
-                            background-color: #f5f5f5;
-                            padding: 10px;
-                            margin-bottom: 5px;
-                            transition: 300ms;
-                            &:hover{
-                                background-color: #0000000d;
-                                color: #555555;
-                            }
-                        }
-                    }
-                }
-                >ul{
-                    display: none;
-                    list-style: none;
-                    >li{
-                        display: none;
-                    }
-                }
+        transition: 200ms;
+        left: -100%; /* -100% */
+        z-index: 4;
+        > div.navButton {
+          width: 100%;
+          height: 54px;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          > button {
+            width: 50%;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            text-align: left;
+            cursor: pointer;
+            font-size: 10px;
+            font-weight: 600;
+            font-family: sans-regular;
+            color: $common-grey;
+            border: unset;
+            outline: unset;
+            background-color: #f5f5f5;
+            text-transform: uppercase;
+            > img {
+              width: 29px;
+              height: 29px;
+              margin: 20px 10px;
             }
-            >div.loginBig{
-                display: none !important;
+          }
+          > button:first-of-type {
+            > img:first-of-type {
+              width: 25px;
+              height: 25px;
+              margin: 20px 10px;
             }
+          }
+          > button:nth-of-type(2) {
+            > img:last-of-type {
+              display: none;
+            }
+          }
         }
+        > div.accordionMenu {
+          display: none;
+          flex-flow: column nowrap;
+          height: inherit;
+          overflow-y: scroll;
+          overflow-x: hidden;
+          margin-bottom: 5px;
+          > a {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            margin-bottom: 5px;
+            width: 100%;
+            height: 37px;
+            min-height: 37px;
+            font-family: sans-regular;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            padding-left: 30px;
+            box-sizing: border-box;
+            color: $common-grey;
+          }
+          > a:first-of-type:focus {
+            background-color: #fbfbfb;
+          }
+          > a:nth-of-type(2),
+          a:nth-of-type(3) {
+            &:hover {
+              color: #777777;
+            }
+          }
+          > button.accordion,
+          button.accordion-color {
+            @extend %accordion-button-settings;
+            @include border-left-sideNav(transparent);
+          }
+          > button.accordion:nth-of-type(3) {
+            @include border-left-sideNav(#91e7e3);
+          }
+          > button.accordion:nth-of-type(4) {
+            @include border-left-sideNav(#e793b7);
+          }
+          > button.accordion:nth-of-type(5) {
+            @include border-left-sideNav(#b6ada5);
+          }
+          > button.accordion:nth-of-type(6) {
+            @include border-left-sideNav(#2774ae);
+          }
+          > button.accordion:nth-of-type(7) {
+            @include border-left-sideNav(#f0c264);
+          }
+          > button.accordion:nth-of-type(8) {
+            @include border-left-sideNav(#ff8072);
+          }
+          > button.accordion:nth-of-type(9) {
+            @include border-left-sideNav(#685bc7);
+          }
+          > button.accordion:nth-of-type(10) {
+            @include border-left-sideNav(#007681);
+          }
+          > button.accordion:nth-of-type(11) {
+            @include border-left-sideNav(#7ed1ea);
+          }
+          > div.panel {
+            @extend %accordion-panel-settings;
+            > div.eCatalogue {
+              justify-content: center;
+              align-items: center;
+              > div {
+                width: 250px;
+                display: flex;
+                flex-flow: column nowrap;
+                > div:first-of-type {
+                  display: flex;
+                  flex-flow: column nowrap;
+                  justify-content: center;
+                  align-items: center;
+                  > a {
+                    display: block;
+                    text-decoration: none;
+                    color: $black;
+                    font-size: 17px;
+                    font-weight: bold;
+                  }
+                  > p {
+                    color: #666666;
+                    text-align: center;
+                    font-size: 14px;
+                    margin: 10px 0 15px 0;
+                  }
+                }
+                > div:nth-of-type(2) {
+                  width: inherit;
+                  height: 354.7px;
+                  border-radius: 10px;
+                  > img {
+                    transition: 500ms;
+                    cursor: pointer;
+                    width: 100%;
+                    border-radius: inherit;
+                  }
+                }
+                > div:nth-of-type(3) {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: inherit;
+                  height: 22.4px;
+                  margin-top: 12px;
+                  > a {
+                    text-decoration: underline 2px;
+                    color: $common-grey;
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-underline-offset: 5px;
+                  }
+                }
+              }
+            }
+            > div.Inspiration {
+              width: 100%;
+              height: 54px;
+              display: flex;
+              flex-flow: row nowrap;
+              align-items: center;
+              > a {
+                display: block;
+                width: inherit;
+                height: 41px;
+                text-decoration: none;
+                color: $common-grey;
+                font-size: 14px;
+                padding: 10px 0 10px 55px;
+                &:hover {
+                  color: #007681;
+                  font-weight: bold;
+                }
+              }
+            }
+            > div.skinCare,
+            div.Make-Up,
+            div.Fragrance,
+            div.bathBody,
+            div.Hair,
+            div.Accessories,
+            div.Wellness,
+            div.Men,
+            div.kidsBaby {
+              @extend %sub-accordion-full-settings;
+            }
+          }
+          div.footNav {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            > a {
+              display: block;
+              text-decoration: none;
+              width: inherit;
+              color: $common-grey;
+              font-size: 14px;
+              font-weight: 700;
+              text-align: center;
+              background-color: #f5f5f5;
+              padding: 7px 0;
+              &:hover {
+                color: #666666;
+              }
+            }
+            > a:last-of-type {
+              background-color: unset;
+              margin: 15px 0;
+              display: flex;
+              flex-flow: row nowrap;
+              align-items: center;
+              justify-content: center;
+              > img {
+                transform: rotateY(180deg);
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+        > div.login {
+          width: 100%;
+          height: 513.4px;
+          padding: 15px 20px;
+          display: none;
+          flex-flow: column nowrap;
+          align-items: center;
+          > div.signIn {
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            color: $common-grey;
+          }
+          > form {
+            display: flex;
+            flex-flow: column nowrap;
+            width: 100%;
+            color: $common-grey;
+            > div {
+              position: relative;
+              margin-bottom: 20px;
+              &::after {
+                content: "";
+                box-sizing: content-box;
+                width: 100%;
+                border-bottom: 2px solid #cccccc;
+                position: absolute;
+                left: 0;
+                bottom: -1px;
+              }
+              > label {
+                margin-bottom: 3px;
+                display: block;
+                font-size: 10px;
+                font-weight: normal;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+              }
+              > input {
+                font-size: 14px;
+                width: 100%;
+                height: 29px;
+                min-width: 0%;
+                border: unset;
+                padding: 4px 0px 5px 0px;
+                outline: unset;
+                position: relative;
+              }
+            }
+            > button {
+              width: 100%;
+              height: 40px;
+              font-family: sans-regular;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: unset;
+              margin-top: 5px;
+              font-size: 14px;
+              font-weight: bold;
+              cursor: pointer;
+              color: $white;
+              background-color: #68bb93;
+              border-radius: 25px;
+              transition: 300ms;
+              &:hover {
+                background-color: #489671;
+              }
+            }
+          }
+          > a {
+            font-family: sans-regular;
+            line-height: 1.5;
+            color: $common-grey;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 700;
+            margin: 10px 0;
+            &:hover {
+              font-weight: bold;
+              color: #282828;
+            }
+          }
+          > a:nth-of-type(2) {
+            font-size: 12px;
+            color: #555555;
+            &:hover {
+              color: #666666;
+            }
+          }
+          > button {
+            width: 100%;
+            height: 40px;
+            font-family: sans-regular;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: unset;
+            margin-top: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            color: $common-grey;
+            background-color: $white;
+            border-radius: 25px;
+            transition: 300ms;
+            box-shadow: 0 3px 6px #cccccc;
+            > span {
+              margin: 0 auto 0 48px;
+            }
+            > img {
+              margin-left: 5px;
+            }
+          }
+          > div.register {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            color: #555555;
+            font-weight: 700;
+            margin-top: 20px;
+          }
+          > div.addition {
+            margin: 15px 0 10px 0;
+            width: 330px;
+            max-width: 330px;
+            color: $common-grey;
+            display: flex;
+            flex-flow: column nowrap;
+            > a {
+              display: block;
+              text-decoration: none;
+              width: 100%;
+              color: $common-grey;
+              font-size: 14px;
+              font-weight: 700;
+              text-align: center;
+              background-color: #f5f5f5;
+              padding: 10px;
+              margin-bottom: 5px;
+              transition: 300ms;
+              &:hover {
+                background-color: #0000000d;
+                color: #555555;
+              }
+            }
+          }
+        }
+        > ul {
+          display: none;
+          list-style: none;
+          > li {
+            display: none;
+          }
+        }
+      }
+      > div.loginBig {
+        display: none !important;
+      }
     }
+  }
 }

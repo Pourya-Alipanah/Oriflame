@@ -3,14 +3,17 @@ main{
         >section.whatsNew{
             max-width:1346px ;
             position: relative;
-            margin: 0 auto 100px auto;
+            margin: 0 auto 60px auto;
+            padding: 0 15px;
             display: grid;
             grid-template-areas: 
-            "title-1 title-1 title-2"
-            "banner product product"
+            "title-1"
+            "banner"
+            "product"
+            "title-2"
             ;
-            gap: 30px 15px;
-            grid-template-columns: 9fr 11fr;
+            gap: 15px;
+            grid-template-columns: 1fr;
             justify-content: center;
             >div.title-1{
                 grid-area: title-1;
@@ -20,7 +23,8 @@ main{
             }
             >a.title-2{
                 grid-area: title-2;
-                justify-self: end;
+                margin-top: 5px;
+                justify-self: center;
                 align-self: center;
                 @extend %posts-button-setting;
             }
@@ -46,6 +50,11 @@ main{
             >div.product{
                 grid-area: product;
                 @extend %product-list-settings;
+                >div{
+                    >div:last-of-type{
+                        display: none;
+                    }
+                }
             }
         }
     }
