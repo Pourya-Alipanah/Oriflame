@@ -155,8 +155,14 @@ nav {
       }
     }
     div.center {
-      > img {
+      min-width: 100px;
+      >a{
         width: 100px;
+        max-height: 22.3px;
+        > img {
+          width: inherit;
+          max-height: inherit;
+        }
       }
     }
     div.right {

@@ -1,0 +1,20 @@
+main{
+    >div.wrapper{
+        >section.midVid{
+            display: flex;
+            flex-flow: column nowrap;
+            width: 100%;
+            align-items: center;
+            margin-bottom: 100px;
+            gap: 30px;
+            >video{
+                width: 100%;
+                max-width: 800px;
+            }
+            >button{
+                @extend %posts-button-setting ; 
+                background-color: transparent;
+            }
+        }
+    }
+}

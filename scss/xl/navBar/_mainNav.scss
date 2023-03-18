@@ -101,6 +101,17 @@ nav {
         margin-right: 40px;
       }
     }
+    div.center {
+      min-width: 100px;
+      >a{
+        min-width: 100px;
+        max-height: 30.1px;
+        > img {
+          width: inherit;
+          max-height: inherit;
+        }
+      }
+    }
     div.right {
       justify-content: flex-end;
 

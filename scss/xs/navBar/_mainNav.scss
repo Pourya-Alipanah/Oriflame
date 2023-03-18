@@ -37,7 +37,6 @@ nav {
     > div.left {
       justify-content: flex-start;
       z-index: 3;
-      min-width: 95px;
       > button {
         all: unset;
         cursor: pointer;
@@ -64,7 +63,6 @@ nav {
         top: 2.5px;
       }
       > button:nth-of-type(3) {
-        margin-right: 40px;
         width: 40px;
         height: 40px;
         position: relative;
@@ -157,13 +155,17 @@ nav {
     }
     div.center {
       min-width: 100px;
-      > img {
+      >a{
         width: 100px;
+        max-height: 22.3px;
+        > img {
+          width: inherit;
+          max-height: inherit;
+        }
       }
     }
     div.right {
       justify-content: flex-end;
-      min-width: 95px;
       > div.search {
         display: none;
         position: relative;
@@ -220,7 +222,6 @@ nav {
         }
       }
       > span {
-        margin-left: 25px;
         position: relative;
         top: 2.5px;
         cursor: pointer;

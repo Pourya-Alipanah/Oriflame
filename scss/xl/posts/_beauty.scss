@@ -1,0 +1,64 @@
+main{
+    >div.wrapper{
+        >section.beauty{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            margin: 0 auto 100px auto;
+            color: $common-grey;
+            >p{
+                font-size: 14px;
+                line-height: 1.5;
+                margin: 20px 0 30px 0;
+                max-width: 600px;
+                min-height: 45px;
+                text-align: center;
+            }
+            >div.pics{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                cursor: pointer;
+                >div{
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: center;
+                    max-width: 600px;
+                    border-radius: 5px;
+                    >img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: inherit;
+                        transition: 500ms;
+                        &:hover{
+                            filter: blur(2px);
+                        }
+                    }
+                    >div:first-of-type{
+                        margin: 20px 0 20px 0;
+                        font-size: 14px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                    >div:nth-of-type(2){
+                        margin-bottom: 15px;
+                        height: 90px;
+                        font-size: 30px;
+                        color: #555555;
+                        font-weight: 700;
+                        &:hover{
+                            opacity: 0.75;
+                        }
+                    }
+                    >button{
+                        @extend %posts-button-setting;
+                        background-color: transparent;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
