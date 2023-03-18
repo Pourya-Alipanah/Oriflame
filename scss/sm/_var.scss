@@ -171,6 +171,7 @@ $common-grey: #333333;
   border-radius: 25px;
   padding: 12px 23px;
   transition: 300ms;
+  cursor: pointer;
   &:hover {
     background-color: #3333330a;
   }
@@ -254,7 +255,7 @@ $common-grey: #333333;
           color: $white;
           padding: 0 10px;
         }
-        > span {
+        > span:not(span.badge) {
           position: absolute;
           right: 10px;
           bottom: 15px;
