@@ -97,6 +97,9 @@ body{
 .active-accordion {
     background-color: #FBFBFB !important;
 }
+.active-accordionLink{
+    color: #68bb93 !important;
+}
 .active-accordion-color-skin {
     background-color: #91e7e366 !important;
 }
@@ -142,6 +145,26 @@ body{
     right: 15px;
     font-size: 13px;
     color: #777;
+    margin-left: 5px;
+}
+.accordionLink::after{
+    content: '\25BC';
+    position: absolute;
+    transition: 300ms;
+    right: 15px;
+    font-size: 13px;
+    color: #333333;
+    margin-left: 5px;
+    transform: rotateZ(-90deg);
+}
+.active-accordionLink:after {
+    content: '\25BC';
+    position: absolute;
+    transform: rotateZ(0);
+    transition: 300ms;
+    right: 15px;
+    font-size: 13px;
+    color: #68bb93;
     margin-left: 5px;
 }
 .sub-accordion:after {

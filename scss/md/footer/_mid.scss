@@ -1,0 +1,49 @@
+footer{
+    >div.mid{
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        padding: 30px 15px;
+        background-color: #f5f5f5;
+        >div.wrapper{
+            display: flex;
+            flex-flow: row nowrap;
+            width: 100%;
+            max-width: 984px;
+            margin: 0 auto;
+            gap: 2%;
+            >div{
+                width: 33%;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                color: $common-grey;
+                >div.title{
+                    width: 100%;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 22px;
+                    margin: 9px 0 10px 0;
+                    word-wrap: break-word;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    text-transform: uppercase;
+                }
+                >a{
+                    width: 100%;
+                    font-size: 14px;
+                    text-decoration: none;
+                    line-height: 30px;
+                    color: $common-grey;
+                    &:hover{
+                        color: #68bb93;
+                    }
+                }
+            }
+        }
+    }
+    >div.smallMid{
+        display: none !important;
+    }
+}

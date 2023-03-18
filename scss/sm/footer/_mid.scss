@@ -1,0 +1,41 @@
+footer{
+    >div.mid{
+        display: none !important;
+    }
+    >div.smallMid{
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        align-items: center;
+        background-color: #f5f5f5;
+        padding: 30px 15px;
+        > div.accordionLink-group {
+            width: 100%;
+            flex-flow: column nowrap;
+            height: inherit;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            margin-top: 9px;
+            a {
+                width: 100%;
+                font-size: 14px;
+                text-decoration: none;
+                line-height: 30px;
+                color: $common-grey;
+                &:hover{
+                    color: #68bb93;
+                }
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+            }
+            > button.accordionLink {
+                @extend %accordionLink-button-settings;
+                padding: 15px 20px 15px 0 ;
+            }
+            > div.panel {
+                @extend %accordionLink-panel-settings;
+            }
+        }
+    }
+}

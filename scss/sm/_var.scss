@@ -102,6 +102,23 @@ $common-grey: #333333;
   transition: 400ms;
   margin-bottom: 5px;
 }
+%accordionLink-button-settings{
+  background-color: transparent;
+  position: relative;
+  color: $common-grey;
+  cursor: pointer;
+  width: 100%;
+  line-height: 22px;
+  min-height: 37px;
+  text-transform: uppercase;
+  font-family: sans-regular;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 400ms;
+}
 %accordion-panel-settings {
   display: none;
   justify-content: center;
@@ -109,6 +126,13 @@ $common-grey: #333333;
   flex-flow: column nowrap;
   background-color: white;
   transition: 300ms;
+}
+%accordionLink-panel-settings{
+  display: none;
+  flex-flow: column nowrap;
+  justify-content: center;
+  transition: 300ms;
+  padding-left: 10px;
 }
 %sub-accordion-full-settings {
   width: 100%;

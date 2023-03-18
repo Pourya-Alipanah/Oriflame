@@ -179,3 +179,17 @@ closeButton.addEventListener("click" , function(){
 
 /* End initial close Button for top slider */
 
+/* Start accordionLink menu */
+
+let accLink = document.getElementsByClassName("accordionLink");
+
+for (let i = 0; i < accLink.length; i++) {
+  accLink[i].addEventListener("click", function () {
+    this.classList.toggle("active-accordionLink");
+    let panel = this.nextElementSibling;
+    panel.classList.toggle("active-flex");
+  });
+}
+
+/* End accordionLink menu */
+
