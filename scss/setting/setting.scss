@@ -22,6 +22,7 @@ html{
 body{
     font-family: sans-regular;
     overflow-x: clip !important;
+    overflow-x: -moz-hidden-unscrollable !important;
 }
 @keyframes fadeIn {
     0%{
