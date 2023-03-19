@@ -21,8 +21,13 @@ html{
 }
 body{
     font-family: sans-regular;
-    overflow-x: clip !important;
-    overflow-x: -moz-hidden-unscrollable !important;
+    overflow-x: hidden !important;
+    @media screen and (min-width:1200px) {
+        padding-top: 80px;
+    }
+    @media screen and (max-width:1200px) {
+        padding-top: 56px;
+    }
 }
 @keyframes fadeIn {
     0%{
