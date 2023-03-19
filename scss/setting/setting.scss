@@ -21,7 +21,7 @@ html{
 }
 body{
     font-family: sans-regular;
-    // overflow-x: hidden !important;
+    overflow-x: clip !important;
 }
 @keyframes fadeIn {
     0%{
